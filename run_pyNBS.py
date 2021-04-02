@@ -254,8 +254,8 @@ if __name__ == "__main__":
     #    # Perform survival analysis via KM plot
     #    plot.cluster_KMplot(NBS_cluster_assign, args.survival_data, delimiter=params['surv_file_delim'], 
     #        lr_test=params['surv_lr_test'], tmax=params['surv_tmax'], **save_args)
-    else:         
-        print
-        print '##################################################################################'
-        print '# No Survival Analysis Performed'
-        print '##################################################################################'
+    #else:         
+    #    print
+    #    print '##################################################################################'
+    #    print '# No Survival Analysis Performed'
+    #    print '##################################################################################'
