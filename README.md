@@ -12,8 +12,6 @@ You can get the pre-built container from [singularity-hub](https://singularity-h
 
 The container's `runscript` exposes a subset of [pyNBS's command line interface](https://github.com/idekerlab/pyNBS/wiki/pyNBS-Command-Line-Manual).
 
-(For now we exclude plotting due to unresolved Matplotlib compatibility issues.)
-
 For example, you can use the container to run pyNBS in your terminal like this:
 ```
 $ ./pynbs.simg --help
@@ -33,3 +31,19 @@ optional arguments:
 [etc.]
 ```
 
+## Other notes
+
+* For now we exclude plotting and survival curves from the CLI. This decision results from package compatibility issues.
+* The default build allows pyNBS to use 4 threads. Multithreading is controlled by a few environment variables
+  which may be set in the Singularity file:
+    - `MKL_NUM_THREADS`
+    - `NUMEXPR_NUM_THREADS`
+    - `OMP_NUM_THREADS`
+
+## Licensing and attributions
+
+The code in this repository is distributed under an MIT license (c) David Merrell 2021.
+
+[pyNBS](https://github.com/idekerlab/pyNBS) is distributed under an MIT license (c) Justin Huang 2018.
+
+The script `run_pyNBS.py` in this repository is modified from the original.
