@@ -6,7 +6,7 @@ A singularity container recipe for the [PyNBS](https://github.com/idekerlab/pyNB
 
 You can get the pre-built container from [singularity-hub](https://singularity-hub.org/collections/5334) via `singularity pull`:
 
-`$ singularity pull pynbs.simg shub://dpmerrell/pynbs-singularity:latest`
+`$ singularity pull --name pynbs.simg shub://dpmerrell/pynbs-singularity:latest`
 
 ## Usage
 
