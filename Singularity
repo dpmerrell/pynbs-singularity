@@ -32,9 +32,6 @@ conda config --add channels defaults
 conda config --add channels conda-forge
 conda config --add channels bioconda
 
-apt-get update
-apt-get install -y unzip
-
 # Install dependencies (OLD versions of packages)
 conda install --yes -c anaconda mkl-service=1.1.2
 conda install --yes networkx=2.0
@@ -45,10 +42,7 @@ conda install --yes scikit-learn=0.17.1
 conda install --yes seaborn=0.7.1
 conda install --yes -c conda-forge lifelines
 
-# Get the PyNBS source code
-#wget https://github.com/idekerlab/pyNBS/archive/refs/heads/master.zip
-#unzip master.zip
-#rm master.zip
+# Get the pyNBS source code
 git clone https://github.com/idekerlab/pyNBS
 cd pyNBS
 
