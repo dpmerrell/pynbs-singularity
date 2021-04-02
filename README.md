@@ -4,9 +4,11 @@ A singularity container recipe for the [PyNBS](https://github.com/idekerlab/pyNB
 
 ## Usage
 
-The container's `runscript` exposes [pyNBS's command line interface](https://github.com/idekerlab/pyNBS/wiki/pyNBS-Command-Line-Manual).
+The container's `runscript` exposes a subset of [pyNBS's command line interface](https://github.com/idekerlab/pyNBS/wiki/pyNBS-Command-Line-Manual).
 
-That is, you can use the container to run pyNBS in your terminal like this:
+(For now we exclude plotting due to unresolved Matplotlib compatibility issues.)
+
+For example, you can use the container to run pyNBS in your terminal like this:
 ```
 $ ./pynbs-singularity.simg --help
 usage: run_pyNBS.py [-h] [-params PARAMS_FILE] [-o OUTDIR] [-j JOB_NAME]
