@@ -2,6 +2,12 @@
 
 A singularity container recipe for the [PyNBS](https://github.com/idekerlab/pyNBS) method.
 
+## How to get the container
+
+You can get the pre-built container from [singularity-hub](https://singularity-hub.org/collections/5334) via `singularity pull`:
+
+`$ singularity pull pynbs.simg shub://dpmerrell/pynbs-singularity:latest`
+
 ## Usage
 
 The container's `runscript` exposes a subset of [pyNBS's command line interface](https://github.com/idekerlab/pyNBS/wiki/pyNBS-Command-Line-Manual).
@@ -10,7 +16,7 @@ The container's `runscript` exposes a subset of [pyNBS's command line interface]
 
 For example, you can use the container to run pyNBS in your terminal like this:
 ```
-$ ./pynbs-singularity.simg --help
+$ ./pynbs.simg --help
 usage: run_pyNBS.py [-h] [-params PARAMS_FILE] [-o OUTDIR] [-j JOB_NAME]
                     [-a ALPHA] [-k K] [-n NITER] [-surv SURVIVAL_DATA]
                     [-t THREADS] [-nv]
@@ -26,3 +32,4 @@ optional arguments:
 
 [etc.]
 ```
+
