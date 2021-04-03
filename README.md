@@ -42,8 +42,8 @@ optional arguments:
 
 ## Licensing and attributions
 
-The code in this repository is distributed under an MIT license (c) David Merrell 2021.
+The code in this repository is distributed under an MIT license (c) 2021 David Merrell.
 
-[pyNBS](https://github.com/idekerlab/pyNBS) is distributed under an MIT license (c) Justin Huang 2018.
+[pyNBS](https://github.com/idekerlab/pyNBS) is distributed under an MIT license (c) 2018 Justin Huang.
 
-The script `run_pyNBS.py` in this repository is modified from the original.
+The script `run_pyNBS.py` in this repository is modified from the original (c) 2018 Justin Huang.
